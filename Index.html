@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLT Enterprises | Built On Quality, Speed, And Brute Force</title>
+    <title>DLT Enterprises | Premium Construction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -17,7 +17,6 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0a0a0a;
-            scroll-padding-top: 100px;
         }
         
         .heading-font {
@@ -25,7 +24,7 @@
         }
 
         .hero-bg {
-            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.92)), 
+            background: linear-gradient(rgba(10, 10, 10, 0.88), rgba(10, 10, 10, 0.92)), 
                         url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
         }
 
@@ -35,52 +34,19 @@
         /* Animations */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+            transform: translateY(40px);
+            transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .fade-in-left {
-            opacity: 0;
-            transform: translateX(-40px);
-            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .fade-in-left.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
 
         .stagger-card {
             opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
-        .stagger-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .stagger-card.visible { opacity: 1; transform: translateY(0); }
 
-        .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 25px 50px -12px rgb(185 28 28 / 0.35);
-        }
-
-        .btn-red {
-            background-color: var(--blood-red);
-        }
-        .btn-red:hover {
-            background-color: #991b1b;
-        }
-
-        section {
-            scroll-margin-top: 90px;
-        }
+        section { scroll-margin-top: 90px; }
     </style>
 </head>
 <body class="text-white overflow-x-hidden">
@@ -99,11 +65,12 @@
             <div class="hidden md:flex items-center gap-10 text-sm font-medium">
                 <a href="#services" class="hover:text-[#d2b48c] transition-colors">Services</a>
                 <a href="#about" class="hover:text-[#d2b48c] transition-colors">About</a>
+                <a href="#projects" class="hover:text-[#d2b48c] transition-colors">Projects</a>
                 <a href="#why" class="hover:text-[#d2b48c] transition-colors">Why DLT</a>
                 <a href="#contact" class="hover:text-[#d2b48c] transition-colors">Contact</a>
             </div>
             
-            <a href="#contact" class="px-8 py-4 btn-red hover:brightness-110 transition-all rounded-2xl font-semibold text-sm tracking-wider">
+            <a href="#contact" class="px-8 py-4 bg-[#b91c1c] hover:brightness-110 transition-all rounded-2xl font-semibold text-sm tracking-wider">
                 START YOUR PROJECT
             </a>
         </div>
@@ -112,7 +79,7 @@
     <!-- HERO -->
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-6 pt-32 pb-24">
-            <div class="max-w-3xl fade-in" id="hero-content">
+            <div class="max-w-3xl fade-in">
                 <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-3xl mb-8 border border-white/20">
                     <div class="w-2 h-2 bg-[#b91c1c] rounded-full animate-pulse"></div>
                     <span class="text-sm font-medium tracking-widest">EST. 2026 • OKLAHOMA CITY</span>
@@ -122,22 +89,16 @@
                     INTELLIGENT<br>HARD WORK.
                 </h1>
                 
-                <p class="text-3xl font-light text-zinc-200 mb-8">
-                    Premier Construction Company
-                </p>
+                <p class="text-3xl font-light text-zinc-200 mb-8">Premier Construction • Residential & Commercial</p>
                 
-                <div class="text-3xl font-medium tan-accent mb-12 max-w-lg">
+                <div class="text-3xl font-medium tan-accent mb-12">
                     "Built On Quality, Speed, And Brute Force"
                 </div>
                 
                 <div class="flex flex-wrap gap-5">
-                    <a href="#contact" class="px-10 py-5 btn-red hover:brightness-110 transition-all rounded-3xl font-semibold text-lg inline-flex items-center gap-3">
+                    <a href="#contact" class="px-10 py-5 bg-[#b91c1c] hover:brightness-110 transition-all rounded-3xl font-semibold text-lg inline-flex items-center gap-3">
                         START A PROJECT
                         <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                    
-                    <a href="#services" class="px-10 py-5 border border-white/40 hover:border-[#d2b48c] hover:text-[#d2b48c] font-medium rounded-3xl text-lg transition-all">
-                        SEE OUR SERVICES
                     </a>
                 </div>
             </div>
@@ -149,26 +110,26 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <span class="px-6 py-3 bg-red-950/50 text-[#d2b48c] text-sm rounded-3xl font-medium">OUR DIVISIONS</span>
-                <h2 class="heading-font text-6xl font-bold mt-6 tracking-tighter">Specialty Construction Services</h2>
+                <h2 class="heading-font text-6xl font-bold mt-6 tracking-tighter">What We Build</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-black border border-zinc-800 rounded-3xl p-10 card-hover stagger-card" data-delay="100">
-                    <div class="text-4xl mb-6">🛠️</div>
+                <div class="bg-black border border-zinc-800 rounded-3xl p-10 stagger-card" data-delay="100">
+                    <div class="text-5xl mb-6">🛠️</div>
                     <h3 class="text-3xl font-semibold mb-4">Specialty Coatings & Flooring</h3>
-                    <p class="text-zinc-400 leading-relaxed">Epoxy floors, concrete staining & sealing, polished concrete, and premium wood flooring.</p>
+                    <p class="text-zinc-400">Epoxy floors, concrete staining, sealing, polishing, and premium wood flooring.</p>
                 </div>
                 
-                <div class="bg-black border border-zinc-800 rounded-3xl p-10 card-hover stagger-card" data-delay="200">
-                    <div class="text-4xl mb-6">🏠</div>
+                <div class="bg-black border border-zinc-800 rounded-3xl p-10 stagger-card" data-delay="200">
+                    <div class="text-5xl mb-6">🏠</div>
                     <h3 class="text-3xl font-semibold mb-4">Residential Remodeling</h3>
-                    <p class="text-zinc-400 leading-relaxed">High-end kitchens, bathrooms, and complete home transformations.</p>
+                    <p class="text-zinc-400">High-end kitchens, bathrooms, and full home transformations.</p>
                 </div>
                 
-                <div class="bg-black border border-zinc-800 rounded-3xl p-10 card-hover stagger-card" data-delay="300">
-                    <div class="text-4xl mb-6">🏗️</div>
+                <div class="bg-black border border-zinc-800 rounded-3xl p-10 stagger-card" data-delay="300">
+                    <div class="text-5xl mb-6">🏗️</div>
                     <h3 class="text-3xl font-semibold mb-4">Structural Concrete</h3>
-                    <p class="text-zinc-400 leading-relaxed">Driveways, foundations, patios, and custom concrete work.</p>
+                    <p class="text-zinc-400">Driveways, foundations, patios, and custom concrete work.</p>
                 </div>
             </div>
         </div>
@@ -177,61 +138,75 @@
     <!-- ABOUT -->
     <section id="about" class="py-24 bg-black">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mx-auto fade-in">
+            <div class="max-w-3xl fade-in">
                 <h2 class="heading-font text-6xl font-bold tracking-tighter mb-8">Replacing cheap workmanship with intelligent hard work.</h2>
-                <p class="text-xl text-zinc-300">
-                    DLT Enterprises is a premier dual-market construction company serving both residential and commercial clients. 
-                    We deliver uncompromised quality at elite speed with absolute transparency and superior communication.
+                <p class="text-xl text-zinc-300 leading-relaxed">
+                    DLT Enterprises is a premier dual-market construction company focused on uncompromising quality, elite speed, 
+                    and absolute transparency. We serve both residential and commercial clients across Oklahoma.
                 </p>
-                <p class="text-xl text-zinc-300 mt-6">
-                    On time. Every time.
-                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 fade-in">
+                <h2 class="heading-font text-6xl font-bold tracking-tighter">Recent Projects</h2>
+                <a href="#" class="text-[#d2b48c] hover:underline">View All Projects →</a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Add more project cards here as needed -->
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden stagger-card">
+                    <img src="https://picsum.photos/id/1015/800/600" alt="Project" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <p class="text-[#d2b48c] text-sm">2026 • Residential</p>
+                        <h3 class="text-xl font-semibold mt-2">Full Kitchen & Bath Remodel</h3>
+                    </div>
+                </div>
+                <!-- Duplicate or add more cards -->
             </div>
         </div>
     </section>
 
     <!-- WHY DLT -->
-    <section id="why" class="py-24 bg-[#0a0a0a]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="heading-font text-6xl font-bold tracking-tighter">Why Choose DLT Enterprises</h2>
-            </div>
+    <section id="why" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-6xl font-bold tracking-tighter mb-16 fade-in">Why Choose DLT Enterprises</h2>
             
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center fade-in-left">
-                    <div class="text-6xl mb-6">🔨</div>
-                    <h3 class="text-2xl font-semibold mb-3">Uncompromised Quality</h3>
-                    <p class="text-zinc-400">Superior craftsmanship that lasts for generations.</p>
-                </div>
-                <div class="text-center fade-in">
-                    <div class="text-6xl mb-6">⚡</div>
-                    <h3 class="text-2xl font-semibold mb-3">Elite Speed</h3>
-                    <p class="text-zinc-400">Intelligent planning and execution that gets projects done faster.</p>
-                </div>
-                <div class="text-center fade-in-left">
-                    <div class="text-6xl mb-6">🤝</div>
-                    <h3 class="text-2xl font-semibold mb-3">Radical Transparency</h3>
-                    <p class="text-zinc-400">Clear communication, honest timelines, and no surprises.</p>
-                </div>
+                <div class="fade-in"><div class="text-6xl mb-6">🔨</div><h3 class="text-2xl font-semibold mb-3">Uncompromised Quality</h3><p class="text-zinc-400">Built to last generations, never shortcuts.</p></div>
+                <div class="fade-in"><div class="text-6xl mb-6">⚡</div><h3 class="text-2xl font-semibold mb-3">Elite Speed</h3><p class="text-zinc-400">Intelligent planning meets brute force execution.</p></div>
+                <div class="fade-in"><div class="text-6xl mb-6">🤝</div><h3 class="text-2xl font-semibold mb-3">Radical Transparency</h3><p class="text-zinc-400">On time. Honest updates. No surprises.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- TESTIMONIALS -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold mb-12 fade-in">What Our Clients Say</h2>
+            <!-- Add real testimonials here later -->
+        </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
     <section id="contact" class="py-32 bg-black border-t border-red-900/30">
         <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-            <h2 class="heading-font text-6xl font-bold tracking-tighter mb-6">Ready for better construction?</h2>
-            <p class="text-2xl text-zinc-400 mb-12">Tell us about your project — residential or commercial.</p>
+            <h2 class="heading-font text-6xl font-bold tracking-tighter mb-6">Ready to Build Something Exceptional?</h2>
+            <p class="text-2xl text-zinc-400 mb-12">Tell us about your project. We respond quickly.</p>
             
             <form class="max-w-xl mx-auto space-y-6" onsubmit="handleSubmit(event)">
                 <div class="grid grid-cols-2 gap-6">
-                    <input type="text" placeholder="Your Name" class="bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none transition">
-                    <input type="email" placeholder="Email Address" class="bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none transition">
+                    <input type="text" placeholder="Full Name" class="bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none">
+                    <input type="email" placeholder="Email Address" class="bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none">
                 </div>
-                <input type="text" placeholder="Project Type (Kitchen Remodel, Epoxy Floor, Concrete Driveway, etc.)" 
-                       class="w-full bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none transition">
+                <input type="tel" placeholder="Phone Number" class="w-full bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none">
+                <textarea placeholder="Project Details (Type, Timeline, Budget Range)" rows="5"
+                    class="w-full bg-zinc-950 border border-zinc-800 focus:border-[#b91c1c] rounded-2xl px-7 py-6 outline-none"></textarea>
                 
-                <button type="submit" class="w-full py-7 btn-red hover:brightness-110 transition-all text-xl font-semibold rounded-3xl">
+                <button type="submit" class="w-full py-7 bg-[#b91c1c] hover:brightness-110 transition-all text-xl font-semibold rounded-3xl">
                     SEND PROJECT INQUIRY
                 </button>
             </form>
@@ -247,49 +222,41 @@
                     <span class="heading-font text-3xl font-semibold">DLT Enterprises</span>
                 </div>
                 
-                <div class="text-center md:text-right">
-                    <div class="text-zinc-400">Oklahoma City, Oklahoma</div>
-                    <div class="text-sm text-zinc-500 mt-1">© 2026 DLT Enterprises. All Rights Reserved.</div>
+                <div class="text-center md:text-right text-zinc-400">
+                    Oklahoma City, Oklahoma<br>
+                    <span class="text-sm text-zinc-500">© 2026 DLT Enterprises. All Rights Reserved.</span>
                 </div>
-            </div>
-            
-            <div class="text-center text-xs text-zinc-600 mt-16">
-                Quality • Speed • Brute Force • Integrity
             </div>
         </div>
     </footer>
 
     <script>
+        // Form Handler
         function handleSubmit(e) {
             e.preventDefault();
             alert("✅ Thank you! Your project inquiry has been received. We'll contact you shortly.");
             e.target.reset();
         }
 
-        // Intersection Observer Animations
+        // Intersection Observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const delay = entry.target.dataset.delay || 0;
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, parseInt(delay));
+                    setTimeout(() => entry.target.classList.add('visible'), parseInt(delay));
                 }
             });
         }, { threshold: 0.15 });
 
-        document.querySelectorAll('.fade-in, .fade-in-left, .stagger-card').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in, .stagger-card').forEach(el => observer.observe(el));
 
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const navHeight = 85;
-                    const offset = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                    const offset = target.getBoundingClientRect().top + window.scrollY - 85;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 }
             });
