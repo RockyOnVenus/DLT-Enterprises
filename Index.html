@@ -15,13 +15,12 @@
             --matte-tan: #d2b48c;
         }
         
-        body {
-            font-family: 'Inter', sans-serif;
+        body { 
+            font-family: 'Inter', sans-serif; 
             background-color: #0a0a0a;
         }
-        
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
+        .heading-font { 
+            font-family: 'Space Grotesk', sans-serif; 
         }
 
         .hero-bg {
@@ -40,8 +39,8 @@
         .service-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85));
+            inset: 0;
+            background: linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.75));
             border-radius: 24px;
         }
 
@@ -50,14 +49,16 @@
             z-index: 10;
         }
 
+        .service-title {
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
         .fade-in {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-        section { scroll-margin-top: 80px; }
     </style>
 </head>
 <body class="text-white overflow-x-hidden">
@@ -66,21 +67,16 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-lg border-b border-zinc-900">
         <div class="max-w-7xl mx-auto px-5 md:px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <!-- LOGO IMAGE SPOT -->
-                <img src="images/logo.png" alt="DLT Enterprises Logo" 
-                     class="w-10 h-10 md:w-12 md:h-12 object-contain">
-                
-                <div>
-                    <span class="heading-font text-3xl md:text-4xl font-semibold tracking-tighter">DLT</span>
-                </div>
+                <img src="images/logo.png" alt="DLT Enterprises Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain">
+                <span class="heading-font text-3xl md:text-4xl font-semibold tracking-tighter">DLT</span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#services" class="hover:text-[#d2b48c] transition-colors">Services</a>
-                <a href="#about" class="hover:text-[#d2b48c] transition-colors">About</a>
-                <a href="#projects" class="hover:text-[#d2b48c] transition-colors">Projects</a>
-                <a href="#why" class="hover:text-[#d2b48c] transition-colors">Why DLT</a>
-                <a href="#contact" class="hover:text-[#d2b48c] transition-colors">Contact</a>
+                <a href="#services" class="hover:text-[#d2b48c]">Services</a>
+                <a href="#about" class="hover:text-[#d2b48c]">About</a>
+                <a href="#projects" class="hover:text-[#d2b48c]">Projects</a>
+                <a href="#why" class="hover:text-[#d2b48c]">Why DLT</a>
+                <a href="#contact" class="hover:text-[#d2b48c]">Contact</a>
             </div>
             
             <a href="#contact" class="px-6 py-3.5 bg-[#b91c1c] hover:brightness-110 transition-all rounded-2xl font-semibold text-sm">
@@ -128,24 +124,24 @@
                 <div class="service-card rounded-3xl p-8 md:p-10 text-white stagger-card" style="background-image: url('images/coatings.jpg');" data-delay="100">
                     <div class="service-content">
                         <div class="text-5xl mb-6">🛠️</div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Specialty Coatings & Flooring</h3>
-                        <p class="text-zinc-200">Epoxy floors, concrete staining, sealing, polishing, and premium wood flooring.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 service-title">Specialty Coatings & Flooring</h3>
+                        <p class="text-white text-[15px] md:text-base leading-relaxed">Epoxy floors, concrete staining, sealing, polishing, and premium wood flooring.</p>
                     </div>
                 </div>
                 
                 <div class="service-card rounded-3xl p-8 md:p-10 text-white stagger-card" style="background-image: url('images/remodeling.jpg');" data-delay="200">
                     <div class="service-content">
                         <div class="text-5xl mb-6">🏠</div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Residential Remodeling</h3>
-                        <p class="text-zinc-200">High-end kitchens, bathrooms, and full home transformations.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 service-title">Residential Remodeling</h3>
+                        <p class="text-white text-[15px] md:text-base leading-relaxed">High-end kitchens, bathrooms, and full home transformations.</p>
                     </div>
                 </div>
                 
                 <div class="service-card rounded-3xl p-8 md:p-10 text-white stagger-card" style="background-image: url('images/concrete.jpg');" data-delay="300">
                     <div class="service-content">
                         <div class="text-5xl mb-6">🏗️</div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Structural Concrete</h3>
-                        <p class="text-zinc-200">Driveways, foundations, patios, and custom concrete work.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 service-title">Structural Concrete</h3>
+                        <p class="text-white text-[15px] md:text-base leading-relaxed">Driveways, foundations, patios, and custom concrete work.</p>
                     </div>
                 </div>
             </div>
